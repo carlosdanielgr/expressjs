@@ -5,6 +5,8 @@ const app = express();
 
 const dirPath = '/dist/landing';
 
+console.log(dirPath);
+
 app.use(express.static(__dirname + dirPath));
 
 app.listen(process.env.PORT || 8080, '192.168.68.114');
